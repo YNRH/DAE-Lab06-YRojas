@@ -1,0 +1,12 @@
+
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1> Detalle de producto </h1>
+    <div class="producto">
+        <h2> Producto: {{ producto.nombre }}</h2>
+        <p>Precio: {{ producto.precio }}</p>
+        <p>Stock: {{ producto.stock }}</p>
+        <p> Categoria: {{ producto.categoria.nombre }}</p>
+    </div>
+{% endblock %}
